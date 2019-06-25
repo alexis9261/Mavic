@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+
+Allow: /
+
+
+Sitemap: http://www.rouxa.com.ve/sitemap.xml
