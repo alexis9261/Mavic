@@ -1,11 +1,8 @@
  <?php
- if(!isset($_SESSION)){
-   session_start();
- }
+ if(!isset($_SESSION)){session_start();}
 //mensaje de $msn_cuentas
 $msn_cuentas="";
-
-require_once ('../common/mercadopago.php');
+require ('../common/mercadopago.php');
 $mp = new MP('1153047962046613', 'i3RGdgCvJXrKT1ceMNOHs4YLNHdgZ9Mj');
 if ($_POST){
 $_SESSION['nombre-cliente']=str_replace("'","",$_POST['nombre-cliente']);
@@ -34,9 +31,7 @@ $_SESSION['ref']=str_replace("'","",$_POST['ref']);
 $_SESSION['codigo-postal']=str_replace("'","",$_POST['codigo-postal']);
 $_SESSION['observaciones']=str_replace("'",".",$_POST['observaciones']);
 include 'comprar.php';
-if (isset($_SESSION['total'])){
-    $total=$_SESSION['total'];
-  }
+if (isset($_SESSION['total'])){$total=$_SESSION['total'];}
 //Enviar mail
   /*$cliente_mail=$_SESSION['nombre-cliente'];
   $destino=$_SESSION['email-cliente'];
@@ -76,7 +71,7 @@ if (isset($_SESSION['total'])){
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-    <title>Rouxa</title>
+    <title>Suministros Mavic</title>
   </head>
   <script>
         function deshabilitaRetroceso(){
@@ -127,13 +122,11 @@ if (isset($_SESSION['total'])){
             <h6 class="col-sm-6 text-center"><b>Titular: </b>Alpargata Skate, C.A.</h6>
             <h6 class="col-sm-6 text-center"><b>RIF: </b>J-405852089</h6>
           </div>
-
           <div class="row bg-light my-3 py-2">
             <h5 class="col-sm-12 text-dark text-center"><b>Monto:</b> <?php echo number_format($total,2, ",","."); ?> Bs </h5>
           </div>
           <div class="container-fluid text-center bg-light mt-3 pt-2">
             <h3 class="display-6" style="font-family: 'Playfair Display', serif;">Llave Digital</h3>
-
           <div class="row mb-4 text-muted">
             <div class="container text-justify">
               Con la <a href="../faq/index.php?id=5" target="_blank">Llave digital</a>, tu número de cedula y los datos de la transacción podrás reportar los pagos asociados a tu compra. Además, podrás hacerle seguimiento a tu pedido. La opcion de <a href="../compras/" target="_blank"> > <i>Compras</i></a> en el menu principal le permitirá realizar estas operaciones.
@@ -205,7 +198,6 @@ if (isset($_SESSION['total'])){
 
 */
             ?>
- <!--  <hr class="my-4"> -->
             <div class="container mt-2">
              <div class="row justify-content-center">
                <a href="../index.php" target="_blank"><img src="../imagen/logo.png" alt="" width="90px"></a>

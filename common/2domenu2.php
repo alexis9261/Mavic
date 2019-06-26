@@ -4,7 +4,6 @@
         <ul class="navbar-nav">
           <?php
             require 'conexion.php';
-
             $sql ="SELECT * FROM CATEGORIAS WHERE PADRE=0 LIMIT 5";
             $result = $conn->query($sql);
             if ($result->num_rows > 0){

@@ -1,16 +1,22 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.php">Rouxa</a>
+        <a class="navbar-brand" href="index.php">Suministros Mavic</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="vitrina/index.php?genero=1">Damas</a>
+              <a class="nav-link" href="vitrina/index.php?genero=1">Equipos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="vitrina/index.php?genero=2">Caballeros</a>
+              <a class="nav-link" href="vitrina/index.php?genero=2">Suministros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vitrina/index.php?genero=2">Repuestos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vitrina/index.php?genero=2">Consumibles</a>
             </li>
              <!--<li class="nav-item">
               <a class="nav-link" href="vitrina/index.php?genero=4">Al Mayor</a>
