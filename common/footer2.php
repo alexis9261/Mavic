@@ -2,9 +2,9 @@
   <div class="container-fluid bg-dark d-flex justify-content-around py-5">
     <div class="align-self-center">
       <div class="d-flex justify-content-center">
-        <a class="my-5 p-2" href="https://www.instagram.com/rouxavzla/" target="_blank"> <i class="fab icono fa-instagram"></i></a>
-        <a class="my-5 p-2" href="https://www.facebook.com/RouxaVzla/" class="icon-facebook-squared" target="_blank"> <i class="fab icono fa-facebook"></i></a>
-        <a class="my-5 p-2" href="https://www.linkedin.com/company/rouxa/" target="_blank"> <i class="fab icono fa-linkedin"></i></a>
+        <a class="my-5 p-2" href="https://www.instagram.com/suministros_mavic/" target="_blank"> <i class="fab icono fa-instagram"></i></a>
+        <a class="my-5 p-2" href="https://www.facebook.com/" class="icon-facebook-squared" target="_blank"> <i class="fab icono fa-facebook"></i></a>
+        <a class="my-5 p-2" href="https://www.linkedin.com/company/" target="_blank"> <i class="fab icono fa-linkedin"></i></a>
         <a class="my-5 p-2" href="mailto:rouxavzla@gmail.com" target="_blank"> <i class="fas icono fa-envelope"></i></a>
       </div>
       <p class="text-muted"><small>&copy; 2018. Rouxa, C.A. Todos los derechos reservados.</small></p>

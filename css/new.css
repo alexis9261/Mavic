@@ -5,6 +5,10 @@
   background-size: cover;
   background-position: top;
 }
+.imagenPpal{
+  height: 60vh;
+  width: auto;
+}
 .principal:hover{
  opacity:0.9;
  filter:alpha(opacity=100); /* For IE8 and earlier */

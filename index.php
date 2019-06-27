@@ -11,8 +11,8 @@ if(isset($_GET['reset'])){session_destroy();}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="desciption" content="Rouxa es una nueva E-commerce Venezolana, creyente de la nueva era digital de venta por internet, fabricante de ropa de alta calidad y confort, cumpliendo con los estándares de moda exigidos por nuestros clientes nacionales e internacionales.">
-  <meta name="keywords" content="Rouxa, Rouxa venezuela, Rouxa vzla, franelas, chemises, Tienda Virtual, Ecommerce venezuela, Ropa en venezuela, franelas comodas, Ropa venezuela">
+  <meta name="desciption" content="Mavic es una nueva E-commerce Venezolana, creyente de la nueva era digital de venta por internet, fabricante de ropa de alta calidad y confort, cumpliendo con los estándares de moda exigidos por nuestros clientes nacionales e internacionales.">
+  <meta name="keywords" content="Suminstros Mavic, Mavic, Rouxa vzla, franelas, chemises, Tienda Virtual, Ecommerce venezuela, Ropa en venezuela, franelas comodas, Ropa venezuela">
   <meta name="author" content="Eutuxia, C.A.">
   <meta name="application-name" content="Suministros Mavic."/>
   <link rel="icon" type="image/jpg" sizes="16x16" href="imagen/favicon.png">
@@ -29,117 +29,125 @@ if(isset($_GET['reset'])){session_destroy();}
   <title>Suministros Mavic C.A.</title>
 </head>
 <body>
-  <?php include_once 'common/menu.php'; include_once 'common/2domenu.php'; ?>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" id="carouselPrincipal">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="imagen/promo.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="imagen/mavic.png" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="imagen/ima1.jpg" alt="Third slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+  <?php include 'common/menu.php'; include 'common/2domenu.php';?>
+  <!--Corousel Library-->
+  <div class="owl-carousel owl-theme principalaux" id="carousel">
+    <!-- Imagenes grandes -->
+    <div class="imagenPpal"><a href="#"><img class="d-block d-sm-none" src="imagen/ima1-responsive.jpeg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/ima1.jpeg" alt=""></a></div>
+    <div class="imagenPpal"><a href="#"><img class="d-block d-sm-none" src="imagen/ima1-responsive.jpeg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/ima2.jpg" alt=""></a></div>
+    <div class="imagenPpal"><a href="#"><img class="d-block d-sm-none" src="imagen/ima1-responsive.jpeg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/publicidad1.jpg" alt=""></a></div>
   </div>
+  <script>
+    $('#carousel').owlCarousel({
+      loop:true,
+      dots:false,
+      //movimiento del carousel
+      autoplay:true,
+      autoplayTimeout:5000,
+      autoplayHoverPause:true,
+      smartSpeed:1000,
+      margin:0,
+      responsive:{0:{items:1}}
+    })
+  </script>
   <article class="container my-4">
     <div class="card-deck row">
+      <div class="col-sm-12 col-md-6 col-lg-3 my-3 py-4">
+        <div class="card" style="max-width: 100%; height: auto;">
+          <a href="compra/index.php?idproducto=<?php// echo $row['IDPRODUCTO']; ?>&idmodelo=<?php// echo $row['IDMODELO']; ?>"><img class="vitrina card-img-top img-fluid" src="imagen/publicidad1.jpg<?php //echo $row['IMA']; ?>" alt="<?php// echo $row['NOMBRE_P']; ?>"></a>
+          <div class="card-body">
+            <h5 class="card-title"><?php //echo $row['NOMBRE_P'];?>Impresora Hp</h5>
+            <p class="card-text"><?php //echo $row['DESCRIPCION'];?>Impresora Hp miltufuncional para oficina.</p>
+            <p class="card-text"><small class="text-muted">Precio: <?php //echo number_format($row['PRECIO']*$tasa_usd*1.16, 2, ',', '.'); ?>59.777,00  Bs.</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 my-3 py-4">
+        <div class="card" style="max-width: 100%; height: auto;">
+          <a href="compra/index.php?idproducto=<?php// echo $row['IDPRODUCTO']; ?>&idmodelo=<?php// echo $row['IDMODELO']; ?>"><img class="vitrina card-img-top img-fluid" src="imagen/publicidad1.jpg<?php //echo $row['IMA']; ?>" alt="<?php// echo $row['NOMBRE_P']; ?>"></a>
+          <div class="card-body">
+            <h5 class="card-title"><?php //echo $row['NOMBRE_P'];?>Impresora Hp</h5>
+            <p class="card-text"><?php //echo $row['DESCRIPCION'];?>Impresora Hp miltufuncional para oficina.</p>
+            <p class="card-text"><small class="text-muted">Precio: <?php //echo number_format($row['PRECIO']*$tasa_usd*1.16, 2, ',', '.'); ?>59.777,00  Bs.</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 my-3 py-4">
+        <div class="card" style="max-width: 100%; height: auto;">
+          <a href="compra/index.php?idproducto=<?php// echo $row['IDPRODUCTO']; ?>&idmodelo=<?php// echo $row['IDMODELO']; ?>">
+            <img class="vitrina card-img-top " src="imagen/publicidad1.jpg<?php //echo $row['IMA']; ?>" alt="<?php// echo $row['NOMBRE_P']; ?>">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title"><?php //echo $row['NOMBRE_P'];?>Impresora Hp</h5>
+            <p class="card-text"><?php //echo $row['DESCRIPCION'];?>Impresora Hp miltufuncional para oficina.</p>
+            <p class="card-text"><small class="text-muted">Precio: <?php //echo number_format($row['PRECIO']*$tasa_usd*1.16, 2, ',', '.'); ?>59.777,00  Bs.</small></p>
+          </div>
+        </div>
+      </div>
       <?php
-      $sql = "SELECT *, m.IMAGEN as IMA FROM MODELOS m
+      /*$sql = "SELECT *, m.IMAGEN as IMA FROM MODELOS m
       INNER JOIN PRODUCTOS p ON p.IDPRODUCTO=m.IDPRODUCTO
       ORDER BY Rand() LIMIT 4";
       $result = $conn->query($sql);
-      if ($result->num_rows > 0){
+      if($result->num_rows>0){
         while($row = $result->fetch_assoc()){
-          ?>
-          <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+          */?>
+          <div class="col-sm-12 col-md-6 col-lg-3 my-3 py-4">
             <div class="card" style="max-width: 100%; height: auto;">
-              <a href="compra/index.php?idproducto=<?php echo $row['IDPRODUCTO']; ?>&idmodelo=<?php echo $row['IDMODELO']; ?>"><img class="vitrina card-img-top img-fluid" src="imagen/<?php echo $row['IMA']; ?>" alt="<?php echo $row['NOMBRE_P']; ?>"></a>
+              <a href="compra/index.php?idproducto=<?php// echo $row['IDPRODUCTO']; ?>&idmodelo=<?php// echo $row['IDMODELO']; ?>"><img class="vitrina card-img-top img-fluid" src="imagen/publicidad1.jpg<?php //echo $row['IMA']; ?>" alt="<?php// echo $row['NOMBRE_P']; ?>"></a>
               <div class="card-body">
-                <h5 class="card-title"><?php echo $row['NOMBRE_P']; ?></h5>
-                <p class="card-text"><?php echo $row['DESCRIPCION']; ?></p>
-                <p class="card-text"><small class="text-muted">Precio: <?php echo number_format($row['PRECIO']*$tasa_usd*1.16, 2, ',', '.'); ?>  Bs.</small></p>
+                <h5 class="card-title"><?php //echo $row['NOMBRE_P'];?>Impresora Hp</h5>
+                <p class="card-text"><?php //echo $row['DESCRIPCION'];?>Impresora Hp miltufuncional para oficina.</p>
+                <p class="card-text"><small class="text-muted">Precio: <?php //echo number_format($row['PRECIO']*$tasa_usd*1.16, 2, ',', '.'); ?>59.777,00  Bs.</small></p>
               </div>
             </div>
           </div>
           <?php
-        }
-      }else{ echo " <p>Aun no existen productos en Vitrina</p>"; }?>
+        /*}
+      } */?>
     </div>
   </article>
-
-<div class="container">
-  <div class="owl-carousel owl-theme px-2">
-    <div class="item"><a href="#"><img width="100px" class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
-    <div class="item"><a href="#"><img width="" class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
-    <div class="item"><a href="#"><img width="" class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
-    <div class="item"><a href="#"><img width="" class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
-    <div class="item"><a href="#"><img width="" class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
-    <div class="item"><a href="#"><img width="" class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
-    <div class="item"><a href="#"><img width="" class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
-    <div class="item"><a href="#"><img width="" class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
-    <div class="item"><a href="#"><img width="" class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
-    <div class="item"><a href="#"><img width="" class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
-    <div class="item"><a href="#"><img width="" class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
-    <div class="item"><a href="#"><img width="" class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
+  <div class="container my-5">
+    <div class="owl-carousel owl-theme px-2 my-5">
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad2.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad3.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad4.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad5.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad6.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad7.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad8.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad9.jpg" alt=""></a></div>
+    </div>
   </div>
-</div>
   <script>
     $('.owl-carousel').owlCarousel({
         loop:true,
+        //movimiento del carousel
+        autoplay:true,
+        autoplayTimeout:1500,
+        autoplayHoverPause:true,
+        smartSpeed:1000,
+
+
         margin:40,
-        nav:true,
         responsive:{//pixeles de la pantalla
             0:{items:1},
             600:{items:2},
             1000:{items:3}
         }
     })
-  </script>
+    </script>
 
-    <div class="container my-5">
-      <div class="row justify-content-around my-5">
-        <div class="col-sm-3">
-          <a href="#">
-            <img class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-sm-3">
-          <a href="#">
-            <img class="img-fluid imagenInsta" src="imagen/publicidad2.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-sm-3">
-          <a href="#">
-            <img class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
   <div class="jumbotron mb-0">
     <h1 class="display-4" style="font-family: 'Playfair Display', serif;">Suministros Mavic</h1>
-    <p class="lead">Mavic es una empresa enfocada en .</p>
+    <p class="lead">Incluso la noche más oscura terminará con la salida del sol.</p>
     <hr>
     <div class="jumbotron bg-dark mb-0">
       <h1 class="display-5 text-muted">¡Disfruta de Nuestras Promociones!</h1>
       <hr class="my-4">
       <p class="lead text-white-50" style="font-family: 'Playfair Display', serif;">Enterate de todas las promociones a través de nuestras redes sociales. Envios gratis, precios al Mayor, Promociones Especiales y ¡Mucho más!</p>
-      <a class="btn btn-outline-light btn-lg mt-3" href="https://www.instagram.com/rouxavzla/" role="button" target="_blank">Siguenos en Instagram</a>
+      <a class="btn btn-outline-light btn-lg mt-3" href="https://www.instagram.com/suministros_mavic/" role="button" target="_blank">Siguenos en Instagram</a>
     </div>
   </div>
   <section class="principal2 container-fluid d-flex flex-column align-items-end justify-content-end pr-4 pb-3">
@@ -155,7 +163,6 @@ if(isset($_GET['reset'])){session_destroy();}
     </small>
   </div>
   <?php include_once 'common/footer.php';?>
-
   <script src="admin/assets/libs/popper.js/dist/umd/popper.min.js"></script>
   <script src="admin/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119925583-1"></script>
@@ -165,6 +172,5 @@ if(isset($_GET['reset'])){session_destroy();}
     gtag('js', new Date());
     gtag('config', 'UA-119925583-1');
   </script>
-
 </body>
 </html>

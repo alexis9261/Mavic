@@ -38,9 +38,6 @@ if(isset($_POST['correo'])){
   <link href="assets/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<<<<<<< HEAD
-
-=======
   <?php
   if(isset($_POST['correo'])){
     //$email=$_SESSION['USUARIO'];
@@ -63,7 +60,6 @@ if(isset($_POST['correo'])){
       }
   }
       ?>
->>>>>>> ae679530a31c389442931cfeac18ce287f343dad
   <div class="container">
     <div class="text-center">
       <img src="../imagen/logo.png" alt="Imagen principal" width="50%">
