@@ -33,9 +33,9 @@ if(isset($_GET['reset'])){session_destroy();}
   <!--Corousel Library-->
   <div class="owl-carousel owl-theme principalaux" id="carousel">
     <!-- Imagenes grandes -->
-    <div class="imagenPpal"><a href="#"><img class="d-block d-sm-none" src="imagen/ima1-responsive.jpeg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/ima1.jpeg" alt=""></a></div>
-    <div class="imagenPpal"><a href="#"><img class="d-block d-sm-none" src="imagen/ima1-responsive.jpeg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/ima2.jpg" alt=""></a></div>
-    <div class="imagenPpal"><a href="#"><img class="d-block d-sm-none" src="imagen/ima1-responsive.jpeg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/publicidad1.jpg" alt=""></a></div>
+    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ima1-responsive.jpeg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/ima1.jpeg" alt=""></div>
+    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ima1-responsive.jpeg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/ima2.jpg" alt=""></div>
+    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ima1-responsive.jpeg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/publicidad1.jpg" alt=""></div>
   </div>
   <script>
     $('#carousel').owlCarousel({
@@ -43,7 +43,7 @@ if(isset($_GET['reset'])){session_destroy();}
       dots:false,
       //movimiento del carousel
       autoplay:true,
-      autoplayTimeout:5000,
+      autoplayTimeout:4000,
       autoplayHoverPause:true,
       smartSpeed:1000,
       margin:0,
@@ -156,7 +156,7 @@ if(isset($_GET['reset'])){session_destroy();}
   </section>
   <div class="jumbotron mb-0">
     <h1 class="display-4 mb-2" style="font-family: 'Playfair Display', serif;">Seguimiento de una compra</h1>
-    <p class="lead">Ofrecemos una novedosa forma de hacerle seguimiento a cada compra realizada en Rouxa. Una Llave digital es la herramienta para conocer el estatus de cualquier compra, la llave digital solo se genera al momento de comprar.</p>
+    <p class="lead mt-4">Una <strong>Llave digital</strong> es la herramienta para conocer el estatus de tu compra en Mavic.</p>
     <hr class="my-4">
     <small class="text-muted">La forma de usar la llave es insertandola en el seguidor de pedido que se encuetrará en el menu principal en "Compras". Podrás visualizar el estatus de un pedido, el número de guia
       (una vez que se envia el paquete) e información de la compra realizada. ¡La llave es enviada a su correo! <a href="faq/index.php">Ver más</a>
