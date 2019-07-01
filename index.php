@@ -50,37 +50,41 @@ if(isset($_GET['reset'])){session_destroy();}
       responsive:{0:{items:1}}
     })
   </script>
-  <article class="container my-4">
-    <div class="card-deck row">
-      <div class="col-sm-12 col-md-6 col-lg-3 my-3 py-4">
-        <div class="card" style="max-width: 100%; height: auto;">
-          <a href="compra/index.php?idproducto=<?php// echo $row['IDPRODUCTO']; ?>&idmodelo=<?php// echo $row['IDMODELO']; ?>"><img class="vitrina card-img-top img-fluid" src="imagen/publicidad1.jpg<?php //echo $row['IMA']; ?>" alt="<?php// echo $row['NOMBRE_P']; ?>"></a>
-          <div class="card-body">
-            <h5 class="card-title"><?php //echo $row['NOMBRE_P'];?>Impresora Hp</h5>
-            <p class="card-text"><?php //echo $row['DESCRIPCION'];?>Impresora Hp miltufuncional para oficina.</p>
-            <p class="card-text"><small class="text-muted">Precio: <?php //echo number_format($row['PRECIO']*$tasa_usd*1.16, 2, ',', '.'); ?>59.777,00  Bs.</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3 my-3 py-4">
-        <div class="card" style="max-width: 100%; height: auto;">
-          <a href="compra/index.php?idproducto=<?php// echo $row['IDPRODUCTO']; ?>&idmodelo=<?php// echo $row['IDMODELO']; ?>"><img class="vitrina card-img-top img-fluid" src="imagen/publicidad1.jpg<?php //echo $row['IMA']; ?>" alt="<?php// echo $row['NOMBRE_P']; ?>"></a>
-          <div class="card-body">
-            <h5 class="card-title"><?php //echo $row['NOMBRE_P'];?>Impresora Hp</h5>
-            <p class="card-text"><?php //echo $row['DESCRIPCION'];?>Impresora Hp miltufuncional para oficina.</p>
-            <p class="card-text"><small class="text-muted">Precio: <?php //echo number_format($row['PRECIO']*$tasa_usd*1.16, 2, ',', '.'); ?>59.777,00  Bs.</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3 my-3 py-4">
-        <div class="card" style="max-width: 100%; height: auto;">
-          <a href="compra/index.php?idproducto=<?php// echo $row['IDPRODUCTO']; ?>&idmodelo=<?php// echo $row['IDMODELO']; ?>">
-            <img class="vitrina card-img-top " src="imagen/publicidad1.jpg<?php //echo $row['IMA']; ?>" alt="<?php// echo $row['NOMBRE_P']; ?>">
+  <article class="container my-4 ">
+    <div class="card-deck row justify-content-center">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+        <div class="card">
+          <a href="">
+            <img class="vitrina card-img-top" src="imagen/modem.webp">
           </a>
           <div class="card-body">
-            <h5 class="card-title"><?php //echo $row['NOMBRE_P'];?>Impresora Hp</h5>
-            <p class="card-text"><?php //echo $row['DESCRIPCION'];?>Impresora Hp miltufuncional para oficina.</p>
-            <p class="card-text"><small class="text-muted">Precio: <?php //echo number_format($row['PRECIO']*$tasa_usd*1.16, 2, ',', '.'); ?>59.777,00  Bs.</small></p>
+            <h5 class="card-title">Impresora Hp</h5>
+            <p class="card-text">Impresora Hp miltufuncional para oficina.</p>
+            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+        <div class="card producto">
+          <a href="">
+            <img class="vitrina card-img-top" src="imagen/router.webp">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title"> Impresora Hp</h5>
+            <p class="card-text"> Impresora Hp miltufuncional para oficina.</p>
+            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+        <div class="card producto">
+          <a href="">
+            <img class="vitrina card-img-top" src="imagen/modem.webp">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">mpresora Hp</h5>
+            <p class="card-text">Impresora Hp miltufuncional para oficina.</p>
+            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
           </div>
         </div>
       </div>
@@ -92,9 +96,11 @@ if(isset($_GET['reset'])){session_destroy();}
       if($result->num_rows>0){
         while($row = $result->fetch_assoc()){
           */?>
-          <div class="col-sm-12 col-md-6 col-lg-3 my-3 py-4">
-            <div class="card" style="max-width: 100%; height: auto;">
-              <a href="compra/index.php?idproducto=<?php// echo $row['IDPRODUCTO']; ?>&idmodelo=<?php// echo $row['IDMODELO']; ?>"><img class="vitrina card-img-top img-fluid" src="imagen/publicidad1.jpg<?php //echo $row['IMA']; ?>" alt="<?php// echo $row['NOMBRE_P']; ?>"></a>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+            <div class="card producto">
+              <a href="compra/index.php?idproducto=<?php// echo $row['IDPRODUCTO']; ?>&idmodelo=<?php// echo $row['IDMODELO']; ?>">
+                <img class="vitrina card-img-top img-fluid" src="imagen/modem2.webp<?php //echo $row['IMA']; ?>" alt="<?php// echo $row['NOMBRE_P']; ?>">
+              </a>
               <div class="card-body">
                 <h5 class="card-title"><?php //echo $row['NOMBRE_P'];?>Impresora Hp</h5>
                 <p class="card-text"><?php //echo $row['DESCRIPCION'];?>Impresora Hp miltufuncional para oficina.</p>
@@ -150,10 +156,99 @@ if(isset($_GET['reset'])){session_destroy();}
       <a class="btn btn-outline-light btn-lg mt-3" href="https://www.instagram.com/suministros_mavic/" role="button" target="_blank">Siguenos en Instagram</a>
     </div>
   </div>
+  <article class="container my-4 ">
+    <div class="card-deck row justify-content-center">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+        <div class="card">
+          <a href="">
+            <img class="vitrina card-img-top" src="imagen/modem.webp">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Impresora Hp</h5>
+            <p class="card-text">Impresora Hp miltufuncional para oficina.</p>
+            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+        <div class="card producto">
+          <a href="">
+            <img class="vitrina card-img-top" src="imagen/router.webp">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title"> Impresora Hp</h5>
+            <p class="card-text"> Impresora Hp miltufuncional para oficina.</p>
+            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+        <div class="card producto">
+          <a href="">
+            <img class="vitrina card-img-top" src="imagen/modem.webp">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">mpresora Hp</h5>
+            <p class="card-text">Impresora Hp miltufuncional para oficina.</p>
+            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
+          </div>
+        </div>
+      </div>
+      <?php
+      /*$sql = "SELECT *, m.IMAGEN as IMA FROM MODELOS m
+      INNER JOIN PRODUCTOS p ON p.IDPRODUCTO=m.IDPRODUCTO
+      ORDER BY Rand() LIMIT 4";
+      $result = $conn->query($sql);
+      if($result->num_rows>0){
+        while($row = $result->fetch_assoc()){
+          */?>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+            <div class="card producto">
+              <a href="compra/index.php?idproducto=<?php// echo $row['IDPRODUCTO']; ?>&idmodelo=<?php// echo $row['IDMODELO']; ?>">
+                <img class="vitrina card-img-top img-fluid" src="imagen/modem2.webp<?php //echo $row['IMA']; ?>" alt="<?php// echo $row['NOMBRE_P']; ?>">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title"><?php //echo $row['NOMBRE_P'];?>Impresora Hp</h5>
+                <p class="card-text"><?php //echo $row['DESCRIPCION'];?>Impresora Hp miltufuncional para oficina.</p>
+                <p class="card-text"><small class="text-muted">Precio: <?php //echo number_format($row['PRECIO']*$tasa_usd*1.16, 2, ',', '.'); ?>59.777,00  Bs.</small></p>
+              </div>
+            </div>
+          </div>
+          <?php
+        /*}
+      } */?>
+    </div>
+  </article>
   <section class="principal2 container-fluid d-flex flex-column align-items-end justify-content-end pr-4 pb-3">
     <h5 class="display-4 lead text-light" style="font-family: 'Playfair Display', serif;">La familia es lo más importante</h5>
     <p class="font-italic text-muted h5">Creemos firmemente que tu familia es lo más importante para ti.</p>
   </section>
+  <div class="container my-5">
+    <div class="owl-carousel owl-theme px-2 my-5" id="car">
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad2.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad3.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad4.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad5.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad6.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad7.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad8.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad9.jpg" alt=""></a></div>
+    </div>
+  </div>
+  <script>
+    $('#car').owlCarousel({
+        loop:true,
+        //movimiento del carousel
+        autoplay:false,
+        margin:40,
+        responsive:{//pixeles de la pantalla
+            0:{items:1},
+            600:{items:2},
+            1000:{items:3}
+        }
+    })
+    </script>
   <div class="jumbotron mb-0">
     <h1 class="display-4 mb-2" style="font-family: 'Playfair Display', serif;">Seguimiento de una compra</h1>
     <p class="lead mt-4">Una <strong>Llave digital</strong> es la herramienta para conocer el estatus de tu compra en Mavic.</p>
