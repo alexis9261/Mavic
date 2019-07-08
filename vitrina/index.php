@@ -3,9 +3,9 @@ include '../common/conexion.php';
 include '../common/TasaUSD2.php';
 $publicidad="¡Compra Los mejores productos!";
 #busqueda por genero
-if(isset($_GET['genero'])){
-  $genero=$_GET['genero'];
-  switch($genero){
+if(isset($_GET['categ'])){
+  $categ=$_GET['categ'];
+  switch($categ){
     case '1':
     $publicidad="¡Compra los mejores productos para Damas!";
     $publicidad2="¡Los mejores productos para Damas!";
@@ -18,12 +18,8 @@ if(isset($_GET['genero'])){
     $publicidad="¡Compra los mejores productos para los mas pequeños!";
     $publicidad2="¡Compra lo mejor para Niños!";
     break;
-    /*case '4':
-    $publicidad="¡Compra Al Mayor y obtén excelentes descuentos!";
-    $publicidad2="¡Compra Al Mayor y obtén excelentes descuentos!";
-    break;*/
   }
-}else{$genero=5;}
+}else{$categ=5;}
 #busqueda por tipo de prenda
 if(isset($_GET['tipo'])){
   $tipo=$_GET['tipo'];
@@ -93,57 +89,85 @@ $url=$_SERVER["REQUEST_URI"];
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <?php
-          switch($genero){
+          switch($categ){
             case '1':
             ?>
             <li class="nav-item active">
-              <a class="nav-link" href="../vitrina/index.php?genero=1">Damas</a>
+              <a class="nav-link" href="?categ=1">Equipos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../vitrina/index.php?genero=2">Caballeros</a>
+              <a class="nav-link" href="?categ=2">Suministros</a>
             </li>
-            <!--<li class="nav-item">
-              <a class="nav-link" href="../vitrina/index.php?genero=4">Al Mayor</a>
-            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="?categ=3">Repuestos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?categ=4">Consumibles</a>
+            </li>
             <?php
             break;
             case '2':
             ?>
             <li class="nav-item">
-              <a class="nav-link" href="../vitrina/index.php?genero=1">Damas</a>
+              <a class="nav-link" href="?categ=1">Equipos</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../vitrina/index.php?genero=2">Caballeros</a>
+              <a class="nav-link" href="?categ=2">Suministros</a>
             </li>
-            <!--<li class="nav-item">
-              <a class="nav-link" href="../vitrina/index.php?genero=4">Al Mayor</a>
-            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="?categ=3">Repuestos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?categ=4">Consumibles</a>
+            </li>
             <?php
             break;
             case '3':
             ?>
             <li class="nav-item">
-              <a class="nav-link" href="../vitrina/index.php?genero=1">Damas</a>
+              <a class="nav-link" href="?categ=1">Equipos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../vitrina/index.php?genero=2">Caballeros</a>
+              <a class="nav-link" href="?categ=2">Suministros</a>
             </li>
-            <!--<li class="nav-item active">
-              <a class="nav-link" href="../vitrina/index.php?genero=4">Al Mayor</a>
-            </li>-->
+            <li class="nav-item active">
+              <a class="nav-link" href="?categ=3">Repuestos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?categ=4">Consumibles</a>
+            </li>
+            <?php
+            break;
+            case '4':
+            ?>
+            <li class="nav-item">
+              <a class="nav-link" href="?categ=1">Equipos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?categ=2">Suministros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?categ=3">Repuestos</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="?categ=4">Consumibles</a>
+            </li>
             <?php
             break;
             default:
             ?>
             <li class="nav-item">
-              <a class="nav-link" href="../vitrina/index.php?genero=1">Damas</a>
+              <a class="nav-link" href="?categ=1">Equipos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../vitrina/index.php?genero=2">Caballeros</a>
+              <a class="nav-link" href="?categ=2">Suministros</a>
             </li>
-            <!--<li class="nav-item">
-              <a class="nav-link" href="../vitrina/index.php?genero=4">Al Mayor</a>
-            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="?categ=3">Repuestos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?categ=4">Consumibles</a>
+            </li>
             <?php
             break;
           }
@@ -151,9 +175,6 @@ $url=$_SERVER["REQUEST_URI"];
           <li class="nav-item">
             <a class="nav-link" href="../compras/index.php">Compras</a>
           </li>
-          <!--<li class="nav-item">
-            <a class="nav-link disabled" href="#">Vendedores</a>
-          </li>-->
           <li class="nav-item">
             <a class="nav-link" href="../faq/index.php">FAQ</a>
           </li>
@@ -189,16 +210,17 @@ $url=$_SERVER["REQUEST_URI"];
               <div id="headingOne">
                 <p class="mb-0">
                   <button class="btn enlace2 btn-sm" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <b>Genero</b>
+                    <b>Categoria</b>
                   </button>
                 </p>
               </div>
               <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div>
                   <div class="container-fluid">
-                    <div class="row"><small><a class="enlace2" href="?genero=1">Dama</a></small></div>
-                    <div class="row"><small><a class="enlace2" href="?genero=2">Caballero</a></small></div>
-                    <div class="row"><small><a class="enlace2" href="?genero=3">Niño(a)</a></small></div>
+                    <div class="row"><small><a class="enlace2" href="?categ=1">Equipos</a></small></div>
+                    <div class="row"><small><a class="enlace2" href="?categ=2">Suministros</a></small></div>
+                    <div class="row"><small><a class="enlace2" href="?categ=3">Repuestos</a></small></div>
+                    <div class="row"><small><a class="enlace2" href="?categ=4">Consumibles</a></small></div>
                   </div>
                 </div>
               </div>
@@ -214,10 +236,10 @@ $url=$_SERVER["REQUEST_URI"];
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div>
                   <div class="container-fluid">
-                    <div class="row"><small><a class="enlace2" href="?marca=rouxa">Rouxa</a></small></div>
-                    <div class="row"><small><a class="enlace2" href="?marca=nike">Nike</a></small></div>
-                    <div class="row"><small><a class="enlace2" href="?marca=adidas">Adidas</a></small></div>
-                    <div class="row"><small><a class="enlace2" href="?marca=puma">Puma</a></small></div>
+                    <div class="row"><small><a class="enlace2" href="?marca=epson">Epson</a></small></div>
+                    <div class="row"><small><a class="enlace2" href="?marca=hp">Hp</a></small></div>
+                    <div class="row"><small><a class="enlace2" href="?marca=samsung">Samsung</a></small></div>
+                    <div class="row"><small><a class="enlace2" href="?marca=lenovo">Lenovo</a></small></div>
                   </div>
                 </div>
               </div>
@@ -254,35 +276,39 @@ $url=$_SERVER["REQUEST_URI"];
             </div>
             <hr class="d-none d-sm-block">
             <div class="row">
-              <div class="col-12 d-none d-sm-block"><b>Genero</b></div>
+              <div class="col-12 d-none d-sm-block"><b>Categorias</b></div>
               <?php
-              switch($genero){
+              switch($categ){
                 case '1':
                 ?>
-                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?genero=1">Dama</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?genero=2">Caballero</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?genero=3">Niño(a)</a></small></div>
+                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?categ=1">Equipos</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?categ=2">Suministros</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?categ=3">Repuestos</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?categ=4">Consumibles</a></small></div>
                 <?php
                 break;
                 case '2':
                 ?>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?genero=1">Dama</a></small></div>
-                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?genero=2">Caballero</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?genero=3">Niño(a)</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?categ=1">Equipos</a></small></div>
+                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?categ=2">Suministros</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?categ=3">Repuestos</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?categ=4">Consumibles</a></small></div>
                 <?php
                 break;
                 case '3':
                 ?>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?genero=1">Dama</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?genero=2">Caballero</a></small></div>
-                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?genero=3">Niño(a)</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?categ=1">Equipos</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?categ=2">Suministros</a></small></div>
+                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?categ=3">Repuestos</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?categ=4">Consumibles</a></small></div>
                 <?php
                 break;
                 default:
                 ?>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?genero=1">Dama</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?genero=2">Caballero</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?genero=3">Niño(a)</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?categ=1">Equipos</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?categ=2">Suministros</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?categ=3">Repuestos</a></small></div>
+                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?categ=4">Consumibles</a></small></div>
                 <?php
                 break;
               }
@@ -293,44 +319,44 @@ $url=$_SERVER["REQUEST_URI"];
               <div class="col-12 d-none d-sm-block"><b>Marca</b></div>
               <?php
               switch($marca){
-                case 'rouxa':
+                case 'epson':
                 ?>
-                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?marca=rouxa">Rouxa</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=nike">Nike</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=adidas">Adidas</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=puma">Puma</a></small></div>
+                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?marca=epson">Epson</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=hp">Hp</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=samsung">Samsung</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=lenovo">Lenovo</a></small></div>
                 <?php
                 break;
-                case 'nike':
+                case 'hp':
                 ?>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=rouxa">Rouxa</a></small></div>
-                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?marca=nike">Nike</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=adidas">Adidas</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=puma">Puma</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=epson">Epson</a></small></div>
+                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?marca=hp">Hp</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=samsung">Samsung</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=lenovo">Lenovo</a></small></div>
                 <?php
                 break;
-                case 'adidas':
+                case 'samsung':
                 ?>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=rouxa">Rouxa</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=nike">Nike</a></small></div>
-                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?marca=adidas">Adidas</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=puma">Puma</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=epson">Epson</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=hp">Hp</a></small></div>
+                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?marca=samsung">Samsung</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=lenovo">Lenovo</a></small></div>
                 <?php
                 break;
-                case 'puma':
+                case 'lenovo':
                 ?>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=rouxa">Rouxa</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=nike">Nike</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=adidas">Adidas</a></small></div>
-                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?marca=puma">Puma</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=epson">Epson</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=hp">Hp</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=samsung">Samsung</a></small></div>
+                <div class="col-12 d-none d-sm-block active2"><small><a class="enlace2" href="?marca=lenovo">Lenovo</a></small></div>
                 <?php
                 break;
                 default:
                 ?>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=rouxa">Rouxa</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=nike">Nike</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=adidas">Adidas</a></small></div>
-                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=puma">Puma</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=epson">Epson</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=hp">Hp</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=samsung">Samsung</a></small></div>
+                <div class="col-12 d-none d-sm-block"><small><a class="enlace2" href="?marca=lenovo">Lenovo</a></small></div>
                 <?php
                 break;
               }

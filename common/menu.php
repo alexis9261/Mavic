@@ -10,26 +10,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="vitrina/index.php?genero=1">Equipos</a>
+              <a class="nav-link" href="vitrina/index.php?categ=1">Equipos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="vitrina/index.php?genero=2">Suministros</a>
+              <a class="nav-link" href="vitrina/index.php?categ=2">Suministros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="vitrina/index.php?genero=2">Repuestos</a>
+              <a class="nav-link" href="vitrina/index.php?categ=3">Repuestos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="vitrina/index.php?genero=2">Consumibles</a>
+              <a class="nav-link" href="vitrina/index.php?categ=4">Consumibles</a>
             </li>
-             <!--<li class="nav-item">
-              <a class="nav-link" href="vitrina/index.php?genero=4">Al Mayor</a>
-            </li>-->
             <li class="nav-item">
               <a class="nav-link" href="compras/index.php">Compras</a>
             </li>
-            <!--<li class="nav-item">
-              <a class="nav-link disabled" disabled>Vendedores</a>
-            </li>-->
              <li class="nav-item">
               <a class="nav-link" href="faq/index.php">FAQ</a>
             </li>

@@ -1,14 +1,5 @@
-<footer class="">
+<footer>
   <div class="container-fluid bg-dark d-flex justify-content-around py-5">
-    <div class="align-self-center">
-      <div class="d-flex justify-content-center">
-        <a class="my-5 p-2 text-success" href="https://www.instagram.com/suministros_mavic/" target="_blank"><i class="fab icono fa-instagram"></i></a>
-        <a class="my-5 p-2 text-success" href="https://www.facebook.com/" class="icon-facebook-squared" target="_blank"> <i class="fab icono fa-facebook"></i></a>
-        <a class="my-5 p-2 text-success" href="https://www.linkedin.com/company/" target="_blank"><i class="fab icono fa-linkedin"></i></a>
-        <a class="my-5 p-2 text-success" href="" target="_blank"><i class="fas icono fa-envelope"></i></a>
-      </div>
-      <p class="text-muted"><small>&copy; 2019. Suministros Maciv C.A. Todos los derechos reservados.</small></p>
-    </div>
     <div class="d-none d-md-block d-lg-block">
       <ul class="lista">
         <li><h4 class="text-white">General</h4></li>
@@ -40,7 +31,17 @@
         <li></li>
       </ul>
     </div>
+    <div class="align-self-center">
+      <div class="d-flex justify-content-center">
+        <a class="my-5 p-2 text-success" href="https://www.instagram.com/suministros_mavic/" target="_blank"><i class="fab icono fa-instagram"></i></a>
+        <a class="my-5 p-2 text-success" href="https://www.facebook.com/" class="icon-facebook-squared" target="_blank"> <i class="fab icono fa-facebook"></i></a>
+        <a class="my-5 p-2 text-success" href="https://www.linkedin.com/company/" target="_blank"><i class="fab icono fa-linkedin"></i></a>
+        <a class="my-5 p-2 text-success" href="" target="_blank"><i class="fas icono fa-envelope"></i></a>
+      </div>
+      <p class="text-muted"><small>&copy; 2019. Suministros Maciv C.A. Todos los derechos reservados.</small></p>
+    </div>
   </div>
+
   <div class="container">
     <div class="row justify-content-center">
       <a class="mb-1 text-success" href="index.php"><img width="20px" src="imagen/favicon.png" alt="" width="90px"> Suministros Mavic C.A.</a>

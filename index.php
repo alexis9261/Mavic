@@ -11,8 +11,8 @@ if(isset($_GET['reset'])){session_destroy();}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="desciption" content="Mavic es una nueva E-commerce Venezolana, creyente de la nueva era digital de venta por internet, fabricante de ropa de alta calidad y confort, cumpliendo con los estándares de moda exigidos por nuestros clientes nacionales e internacionales.">
-  <meta name="keywords" content="Suminstros Mavic, Mavic, Rouxa vzla, franelas, chemises, Tienda Virtual, Ecommerce venezuela, Ropa en venezuela, franelas comodas, Ropa venezuela">
+  <meta name="desciption" content="Mavic es una nueva E-commerce Venezolana, creyente de la nueva era digital de venta por internet.">
+  <meta name="keywords" content="Suminstros Mavic, Mavic, Mavic vzla">
   <meta name="author" content="Eutuxia, C.A.">
   <meta name="application-name" content="Suministros Mavic."/>
   <link rel="icon" type="image/jpg" sizes="16x16" href="imagen/favicon.png">
@@ -32,58 +32,58 @@ if(isset($_GET['reset'])){session_destroy();}
   <?php include 'common/menu.php'; include 'common/2domenu.php';?>
   <!--Corousel Library-->
   <div class="owl-carousel owl-theme principalaux" id="carousel">
-    <!-- Imagenes grandes -->
-    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ima1-responsive.jpeg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/ima1.jpeg" alt=""></div>
-    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ima1-responsive.jpeg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/ima2.jpg" alt=""></div>
-    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ima1-responsive.jpeg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/publicidad1.jpg" alt=""></div>
+    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ppal1-responsive.jpg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/principal1.jpg" alt=""></div>
+    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ppal2-responsive.jpg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/principal3.jpg" alt=""></div>
+    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ppal3-responsive.jpg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/principal2.jpg" alt=""></div>
   </div>
   <script>
     $('#carousel').owlCarousel({
       loop:true,
-      dots:false,
+      dots:true,
       //movimiento del carousel
       autoplay:true,
-      autoplayTimeout:4000,
-      autoplayHoverPause:true,
+      autoplayTimeout:3000,
       smartSpeed:1000,
       margin:0,
       responsive:{0:{items:1}}
     })
   </script>
-  <article class="container my-4 ">
+  <!-- Productos -->
+  <article class="container my-3 py-3">
+    <h4 class="text-muted mb-4">Todo los relacionado con <strong>Routers</strong>.</h4>
     <div class="card-deck row justify-content-center">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
         <div class="card">
           <a href="">
             <img class="vitrina card-img-top" src="imagen/modem.webp">
           </a>
           <div class="card-body">
-            <h5 class="card-title">Impresora Hp</h5>
-            <p class="card-text">Impresora Hp miltufuncional para oficina.</p>
+            <h5 class="card-title">Router Tp-Link</h5>
+            <p class="card-text">Router para wifi.</p>
             <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
         <div class="card producto">
           <a href="">
             <img class="vitrina card-img-top" src="imagen/router.webp">
           </a>
           <div class="card-body">
-            <h5 class="card-title"> Impresora Hp</h5>
-            <p class="card-text"> Impresora Hp miltufuncional para oficina.</p>
+            <h5 class="card-title">Router</h5>
+            <p class="card-text">Excelente para generar Wifi.</p>
             <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
         <div class="card producto">
           <a href="">
-            <img class="vitrina card-img-top" src="imagen/modem.webp">
+            <img class="vitrina card-img-top" src="imagen/router3.webp">
           </a>
           <div class="card-body">
-            <h5 class="card-title">mpresora Hp</h5>
-            <p class="card-text">Impresora Hp miltufuncional para oficina.</p>
+            <h5 class="card-title">Modem-Router</h5>
+            <p class="card-text">Para tener internet en cualquier lugar.</p>
             <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
           </div>
         </div>
@@ -96,14 +96,14 @@ if(isset($_GET['reset'])){session_destroy();}
       if($result->num_rows>0){
         while($row = $result->fetch_assoc()){
           */?>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
             <div class="card producto">
               <a href="compra/index.php?idproducto=<?php// echo $row['IDPRODUCTO']; ?>&idmodelo=<?php// echo $row['IDMODELO']; ?>">
                 <img class="vitrina card-img-top img-fluid" src="imagen/modem2.webp<?php //echo $row['IMA']; ?>" alt="<?php// echo $row['NOMBRE_P']; ?>">
               </a>
               <div class="card-body">
-                <h5 class="card-title"><?php //echo $row['NOMBRE_P'];?>Impresora Hp</h5>
-                <p class="card-text"><?php //echo $row['DESCRIPCION'];?>Impresora Hp miltufuncional para oficina.</p>
+                <h5 class="card-title"><?php //echo $row['NOMBRE_P'];?>Router</h5>
+                <p class="card-text"><?php //echo $row['DESCRIPCION'];?>Generador de señal Wifi.</p>
                 <p class="card-text"><small class="text-muted">Precio: <?php //echo number_format($row['PRECIO']*$tasa_usd*1.16, 2, ',', '.'); ?>59.777,00  Bs.</small></p>
               </div>
             </div>
@@ -113,6 +113,7 @@ if(isset($_GET['reset'])){session_destroy();}
       } */?>
     </div>
   </article>
+  <!-- Instagrm -->
   <div class="container my-5">
     <div class="owl-carousel owl-theme px-2 my-5">
       <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
@@ -134,8 +135,6 @@ if(isset($_GET['reset'])){session_destroy();}
         autoplayTimeout:1500,
         autoplayHoverPause:true,
         smartSpeed:1000,
-
-
         margin:40,
         responsive:{//pixeles de la pantalla
             0:{items:1},
@@ -143,25 +142,33 @@ if(isset($_GET['reset'])){session_destroy();}
             1000:{items:3}
         }
     })
-    </script>
-
-  <div class="jumbotron mb-0">
-    <h1 class="display-4" style="font-family: 'Playfair Display', serif;">Suministros Mavic</h1>
-    <p class="lead">Incluso la noche más oscura terminará con la salida del sol.</p>
-    <hr>
-    <div class="jumbotron bg-dark mb-0">
-      <h1 class="display-5 text-muted">¡Disfruta de Nuestras Promociones!</h1>
-      <hr class="my-4">
-      <p class="lead text-white-50" style="font-family: 'Playfair Display', serif;">Enterate de todas las promociones a través de nuestras redes sociales. Envios gratis, precios al Mayor, Promociones Especiales y ¡Mucho más!</p>
-      <a class="btn btn-outline-light btn-lg mt-3" href="https://www.instagram.com/suministros_mavic/" role="button" target="_blank">Siguenos en Instagram</a>
+  </script>
+  <!-- Banner -->
+  <section class="container px-5">
+    <div class="row justify-content-center">
+      <img class="img-fluid d-none d-sm-block" src="imagen/banner.jpg" style="height:40vh;width:100%;" alt="">
     </div>
-  </div>
-  <article class="container my-4 ">
+  </section>
+  <!-- Productos -->
+  <article class="container my-4 pt-3">
+    <h4 class="text-muted mb-4">Todo los relacionado con <strong>Impresoras</strong>.</h4>
     <div class="card-deck row justify-content-center">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card">
           <a href="">
-            <img class="vitrina card-img-top" src="imagen/modem.webp">
+            <img class="vitrina card-img-top" src="imagen/impresora1.webp">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Impresora</h5>
+            <p class="card-text">Impresora para oficina.</p>
+            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card producto">
+          <a href="">
+            <img class="vitrina card-img-top" src="imagen/impresora2.webp">
           </a>
           <div class="card-body">
             <h5 class="card-title">Impresora Hp</h5>
@@ -170,59 +177,87 @@ if(isset($_GET['reset'])){session_destroy();}
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
         <div class="card producto">
           <a href="">
-            <img class="vitrina card-img-top" src="imagen/router.webp">
+            <img class="vitrina card-img-top" src="imagen/impresora3.webp">
           </a>
           <div class="card-body">
-            <h5 class="card-title"> Impresora Hp</h5>
-            <p class="card-text"> Impresora Hp miltufuncional para oficina.</p>
+            <h5 class="card-title">Impresora Epson</h5>
+            <p class="card-text">Impresora miltufuncional.</p>
             <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
-        <div class="card producto">
-          <a href="">
-            <img class="vitrina card-img-top" src="imagen/modem.webp">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">mpresora Hp</h5>
-            <p class="card-text">Impresora Hp miltufuncional para oficina.</p>
-            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
-          </div>
-        </div>
-      </div>
-      <?php
-      /*$sql = "SELECT *, m.IMAGEN as IMA FROM MODELOS m
-      INNER JOIN PRODUCTOS p ON p.IDPRODUCTO=m.IDPRODUCTO
-      ORDER BY Rand() LIMIT 4";
-      $result = $conn->query($sql);
-      if($result->num_rows>0){
-        while($row = $result->fetch_assoc()){
-          */?>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 my-3 py-4">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card producto">
-              <a href="compra/index.php?idproducto=<?php// echo $row['IDPRODUCTO']; ?>&idmodelo=<?php// echo $row['IDMODELO']; ?>">
-                <img class="vitrina card-img-top img-fluid" src="imagen/modem2.webp<?php //echo $row['IMA']; ?>" alt="<?php// echo $row['NOMBRE_P']; ?>">
+              <a href="">
+                <img class="vitrina card-img-top img-fluid" src="imagen/impresora4.webp" alt="">
               </a>
               <div class="card-body">
-                <h5 class="card-title"><?php //echo $row['NOMBRE_P'];?>Impresora Hp</h5>
-                <p class="card-text"><?php //echo $row['DESCRIPCION'];?>Impresora Hp miltufuncional para oficina.</p>
-                <p class="card-text"><small class="text-muted">Precio: <?php //echo number_format($row['PRECIO']*$tasa_usd*1.16, 2, ',', '.'); ?>59.777,00  Bs.</small></p>
+                <h5 class="card-title">Impresora Samsung</h5>
+                <p class="card-text">Impresora miltufuncional para todo uso.</p>
+                <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
               </div>
             </div>
           </div>
-          <?php
-        /*}
-      } */?>
     </div>
   </article>
-  <section class="principal2 container-fluid d-flex flex-column align-items-end justify-content-end pr-4 pb-3">
-    <h5 class="display-4 lead text-light" style="font-family: 'Playfair Display', serif;">La familia es lo más importante</h5>
-    <p class="font-italic text-muted h5">Creemos firmemente que tu familia es lo más importante para ti.</p>
-  </section>
+  <!-- Productos -->
+  <article class="container my-4 ">
+    <h4 class="text-muted mb-4">Todo los relacionado con <strong>Cables</strong>.</h4>
+    <div class="card-deck row justify-content-center">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <a href="">
+            <img class="vitrina card-img-top" src="imagen/cable1.webp">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Cable UTP Cat5e</h5>
+            <p class="card-text">Cable UTP para internet por metro.</p>
+            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card producto">
+          <a href="">
+            <img class="vitrina card-img-top" src="imagen/cable2.webp">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Cable UTP Negro</h5>
+            <p class="card-text">Cable para internet.</p>
+            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card producto">
+          <a href="">
+            <img class="vitrina card-img-top" src="imagen/cable3.webp">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Cable UTP Rj45 Cctv Redes Seguridad Lan</h5>
+            <p class="card-text">Cable para red.</p>
+            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card producto">
+              <a href="">
+                <img class="vitrina card-img-top img-fluid" src="imagen/cable4.webp" alt="">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Cable de red</h5>
+                <p class="card-text">Cable para red de internet.</p>
+                <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
+              </div>
+            </div>
+          </div>
+    </div>
+  </article>
+  <!-- Instagrm -->
   <div class="container my-5">
     <div class="owl-carousel owl-theme px-2 my-5" id="car">
       <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
@@ -248,14 +283,10 @@ if(isset($_GET['reset'])){session_destroy();}
             1000:{items:3}
         }
     })
-    </script>
-  <div class="jumbotron mb-0">
-    <h1 class="display-4 mb-2" style="font-family: 'Playfair Display', serif;">Seguimiento de una compra</h1>
-    <p class="lead mt-4">Una <strong>Llave digital</strong> es la herramienta para conocer el estatus de tu compra en Mavic.</p>
-    <hr class="my-4">
-    <small class="text-muted">La forma de usar la llave es insertandola en el seguidor de pedido que se encuetrará en el menu principal en "Compras". Podrás visualizar el estatus de un pedido, el número de guia
-      (una vez que se envia el paquete) e información de la compra realizada. ¡La llave es enviada a su correo! <a href="faq/index.php">Ver más</a>
-    </small>
+  </script>
+  <!-- Maps -->
+  <div class="m-0">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15708.03522624633!2d-68.005718!3d10.179939!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d47af71967d9a49!2sSuministros+Mavic%2C+C.A!5e0!3m2!1ses!2sve!4v1562178603833!5m2!1ses!2sve" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
   <?php include_once 'common/footer.php';?>
   <script src="admin/assets/libs/popper.js/dist/umd/popper.min.js"></script>
