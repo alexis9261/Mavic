@@ -43,13 +43,14 @@ if(isset($_GET['reset'])){session_destroy();}
       mouseDrag: false,
       //movimiento del carousel
       autoplay:true,
+      autoplayHoverPause:true,
       autoplayTimeout:4000,
       smartSpeed:1000,
       margin:0,
       responsive:{0:{items:1}}
     })
   </script>
-  <!-- Productos -->
+  <!-- Productos 1 -->
   <!--article class="container my-2 py-2">
     <h4 class="text-muted mb-4">Todo los relacionado con <strong>Routers</strong>.</h4>
     <div class="card-deck row justify-content-center">
@@ -151,7 +152,7 @@ if(isset($_GET['reset'])){session_destroy();}
         }
     })
   </script>
-  <!-- Otros Productos -->
+  <!-- Otros Productos 2 -->
   <div class="container">
     <h4 class="text-muted mb-2 lead">Todo los relacionado con <strong>Routers</strong>.</h4>
     <div class="owl-carousel owl-theme px-2 py-3 my-2" id="productoCarousel2">
@@ -224,7 +225,7 @@ if(isset($_GET['reset'])){session_destroy();}
         }
     })
   </script>
-  <!-- Instagrm -->
+  <!-- Instagrm 1-->
   <div class="container mt-1 mb-3">
     <h4 class="text-muted mb-2">Nuestras promociones de <strong>Instagram</strong>.</h4>
     <div class="owl-carousel owl-theme px-2 my-4">
@@ -244,7 +245,7 @@ if(isset($_GET['reset'])){session_destroy();}
         loop:true,
         //movimiento del carousel
         autoplay:true,
-        autoplayTimeout:1500,
+        autoplayTimeout:2500,
         autoplayHoverPause:true,
         smartSpeed:1000,
         margin:40,
@@ -261,7 +262,7 @@ if(isset($_GET['reset'])){session_destroy();}
       <img class="img-fluid d-none d-sm-block" src="imagen/banner.jpg" style="height:40vh;width:100%;" alt="">
     </div>
   </section>
-  <!-- Otros Productos -->
+  <!-- Otros Productos 3 -->
   <div class="container">
     <h4 class="text-muted mb-2 lead">Todo los relacionado con <strong>Toners</strong>.</h4>
     <div class="owl-carousel owl-theme px-2 py-3 my-2" id="productoCarousel3">
@@ -334,7 +335,7 @@ if(isset($_GET['reset'])){session_destroy();}
         }
     })
   </script>
-  <!-- Otros Productos -->
+  <!-- Otros Productos 4 -->
   <div class="container">
     <h4 class="text-muted mb-2 lead">Todo los relacionado con <strong>Cables</strong>.</h4>
     <div class="owl-carousel owl-theme px-2 py-3 my-2" id="productoCarousel4">
@@ -407,7 +408,7 @@ if(isset($_GET['reset'])){session_destroy();}
         }
     })
   </script>
-  <!-- Instagrm -->
+  <!-- Instagrm 2-->
   <div class="container my-5">
     <div class="owl-carousel owl-theme px-2 my-5" id="car">
       <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
@@ -438,11 +439,87 @@ if(isset($_GET['reset'])){session_destroy();}
   <div class="m-0">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15708.03522624633!2d-68.005718!3d10.179939!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d47af71967d9a49!2sSuministros+Mavic%2C+C.A!5e0!3m2!1ses!2sve!4v1562178603833!5m2!1ses!2sve" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
+  <!-- Otros Productos 4 -->
+  <div class="container">
+    <h4 class="text-muted mb-2 mt-3 lead">Tambien te puede interesar.</h4>
+    <div class="owl-carousel owl-theme px-2 py-3 my-2" id="productoCarousel5">
+      <div class="item border-product mb-1">
+        <a href="#">
+          <div class="container-img-product-endpage">
+            <img class="img-product-endpage" src="imagen/producto11.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-1">
+        <a href="#">
+          <div class="container-img-product-endpage">
+            <img class="img-product-endpage" src="imagen/producto12.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-1">
+        <a href="#">
+          <div class="container-img-product-endpage">
+            <img class="img-product-endpage" src="imagen/producto13.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-1">
+        <a href="#">
+          <div class="container-img-product-endpage">
+            <img class="img-product-endpage" src="imagen/producto14.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-1">
+        <a href="#">
+          <div class="container-img-product-endpage">
+            <img class="img-product-endpage" src="imagen/producto15.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-1">
+        <a href="#">
+          <div class="container-img-product-endpage">
+            <img class="img-product-endpage" src="imagen/producto7.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-1">
+        <a href="#">
+          <div class="container-img-product-endpage">
+            <img class="img-product-endpage" src="imagen/producto6.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-1">
+        <a href="#">
+          <div class="container-img-product-endpage">
+            <img class="img-product-endpage" src="imagen/producto20.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    $('#productoCarousel5').owlCarousel({
+        loop:true,
+        dots:false,
+        mouseDrag: false,
+        margin:15,
+        responsive:{
+            0:{items:3},
+            600:{items:5},
+            1000:{items:8}
+        }
+    })
+  </script>
   <?php include_once 'common/footer.php';?>
   <script>
     //Script para texto de descreipcion de los productos
     $(".item").hover(function(){
       var titulo=$(this).find("img").attr("alt");
+      titulo=titulo.substr(0,53)+"...";
       $(this).find(".descrip-item").append("<small class='text-muted px-3 pb-2 border-titulo-sombra' style='position:absolute;background-color:#fff'>"+titulo+"</small>").animate("color","slow","linear");
       $(this).find("small").css("visibility","visible");
     },function(){
