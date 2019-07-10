@@ -43,7 +43,7 @@ if(isset($_GET['reset'])){session_destroy();}
       mouseDrag: false,
       //movimiento del carousel
       autoplay:true,
-      autoplayTimeout:3000,
+      autoplayTimeout:4000,
       smartSpeed:1000,
       margin:0,
       responsive:{0:{items:1}}
@@ -53,42 +53,6 @@ if(isset($_GET['reset'])){session_destroy();}
   <!--article class="container my-2 py-2">
     <h4 class="text-muted mb-4">Todo los relacionado con <strong>Routers</strong>.</h4>
     <div class="card-deck row justify-content-center">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
-        <div class="card">
-          <a href="">
-            <img class="vitrina card-img-top" src="imagen/modem.webp">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Router Tp-Link</h5>
-            <p class="card-text">Router para wifi.</p>
-            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
-        <div class="card producto">
-          <a href="">
-            <img class="vitrina card-img-top" src="imagen/router.webp">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Router</h5>
-            <p class="card-text">Excelente para generar Wifi.</p>
-            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
-        <div class="card producto">
-          <a href="">
-            <img class="vitrina card-img-top" src="imagen/router3.webp">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Modem-Router</h5>
-            <p class="card-text">Para tener internet en cualquier lugar.</p>
-            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
-          </div>
-        </div>
-      </div>
       <?php
       /*$sql = "SELECT *, m.IMAGEN as IMA FROM MODELOS m
       INNER JOIN PRODUCTOS p ON p.IDPRODUCTO=m.IDPRODUCTO
@@ -116,12 +80,12 @@ if(isset($_GET['reset'])){session_destroy();}
   </article-->
   <!-- Otros Productos -->
   <div class="container mt-3">
-    <h4 class="text-muted mb-2">Todo los relacionado con <strong>Impresoras</strong>.</h4>
+    <h4 class="text-muted mb-2 lead">Todo los relacionado con <strong>Impresoras</strong>.</h4>
     <div class="owl-carousel owl-theme px-2 py-3 my-2" id="productoCarousel">
       <div class="item border-product mb-5">
         <a href="#">
-          <div class="container-img-product"><!-- aqui se centra la imagen -->
-            <img class="img-product" src="imagen/producto1.jpg" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto1.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
           <div class="">
             <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
@@ -133,7 +97,7 @@ if(isset($_GET['reset'])){session_destroy();}
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/producto2.jpg" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto2.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
           <div class="">
             <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
@@ -145,7 +109,7 @@ if(isset($_GET['reset'])){session_destroy();}
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/producto3.jpg" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto3.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
           <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
           <div class="descrip-item pb-2">
@@ -155,7 +119,7 @@ if(isset($_GET['reset'])){session_destroy();}
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/publicidad1.jpg" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto4.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
           <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
           <div class="descrip-item pb-2">
@@ -165,7 +129,7 @@ if(isset($_GET['reset'])){session_destroy();}
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/producto5.jpg" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto5.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
           <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
           <div class="descrip-item pb-2">
@@ -175,22 +139,85 @@ if(isset($_GET['reset'])){session_destroy();}
     </div>
   </div>
   <script>
-    $(".item").hover(function(){
-      var titulo=$(this).find("img").attr("alt");
-      $(this).find(".descrip-item").append("<small class='text-muted px-3 pb-2 border-titulo-sombra' style='position:absolute;background-color:#fff'>"+titulo+"</small>").animate("color","slow","linear");
-      $(this).find("small").css("visibility","visible");
-    },function(){
-      $(this).find("small").css("visibility","hidden");
-      $(this).find(".descrip-item").empty();
-    });
-  </script>
-  <script>
     $('#productoCarousel').owlCarousel({
         loop:true,
         dots:false,
         mouseDrag: false,
         margin:15,
         responsive:{//pixeles de la pantalla
+            0:{items:2},
+            600:{items:3},
+            1000:{items:5}
+        }
+    })
+  </script>
+  <!-- Otros Productos -->
+  <div class="container">
+    <h4 class="text-muted mb-2 lead">Todo los relacionado con <strong>Routers</strong>.</h4>
+    <div class="owl-carousel owl-theme px-2 py-3 my-2" id="productoCarousel2">
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto6.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto7.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto8.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+          <div class="descrip-item pb-2">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto9.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+          <div class="descrip-item pb-2">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto10.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+          <div class="descrip-item pb-2">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    $('#productoCarousel2').owlCarousel({
+        loop:true,
+        dots:false,
+        mouseDrag: false,
+        margin:15,
+        responsive:{
             0:{items:2},
             600:{items:3},
             1000:{items:5}
@@ -229,119 +256,157 @@ if(isset($_GET['reset'])){session_destroy();}
     })
   </script>
   <!-- Banner -->
-  <section class="container px-5">
+  <section class="container px-5 mb-4">
     <div class="row justify-content-center">
       <img class="img-fluid d-none d-sm-block" src="imagen/banner.jpg" style="height:40vh;width:100%;" alt="">
     </div>
   </section>
-  <!-- Productos -->
-  <article class="container my-4 pt-3">
-    <h4 class="text-muted mb-4">Todo los relacionado con <strong>Impresoras</strong>.</h4>
-    <div class="card-deck row justify-content-center">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <a href="">
-            <img class="vitrina card-img-top" src="imagen/impresora1.webp">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Impresora</h5>
-            <p class="card-text">Impresora para oficina.</p>
-            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
+  <!-- Otros Productos -->
+  <div class="container">
+    <h4 class="text-muted mb-2 lead">Todo los relacionado con <strong>Toners</strong>.</h4>
+    <div class="owl-carousel owl-theme px-2 py-3 my-2" id="productoCarousel3">
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto19.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card producto">
-          <a href="">
-            <img class="vitrina card-img-top" src="imagen/impresora2.webp">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Impresora Hp</h5>
-            <p class="card-text">Impresora Hp miltufuncional para oficina.</p>
-            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card producto">
-          <a href="">
-            <img class="vitrina card-img-top" src="imagen/impresora3.webp">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Impresora Epson</h5>
-            <p class="card-text">Impresora miltufuncional.</p>
-            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card producto">
-              <a href="">
-                <img class="vitrina card-img-top img-fluid" src="imagen/impresora4.webp" alt="">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Impresora Samsung</h5>
-                <p class="card-text">Impresora miltufuncional para todo uso.</p>
-                <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
-              </div>
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
             </div>
           </div>
-    </div>
-  </article>
-  <!-- Productos -->
-  <article class="container my-4 ">
-    <h4 class="text-muted mb-4">Todo los relacionado con <strong>Cables</strong>.</h4>
-    <div class="card-deck row justify-content-center">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card">
-          <a href="">
-            <img class="vitrina card-img-top" src="imagen/cable1.webp">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Cable UTP Cat5e</h5>
-            <p class="card-text">Cable UTP para internet por metro.</p>
-            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
-          </div>
-        </div>
+        </a>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card producto">
-          <a href="">
-            <img class="vitrina card-img-top" src="imagen/cable2.webp">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Cable UTP Negro</h5>
-            <p class="card-text">Cable para internet.</p>
-            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto18.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="card producto">
-          <a href="">
-            <img class="vitrina card-img-top" src="imagen/cable3.webp">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Cable UTP Rj45 Cctv Redes Seguridad Lan</h5>
-            <p class="card-text">Cable para red.</p>
-            <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card producto">
-              <a href="">
-                <img class="vitrina card-img-top img-fluid" src="imagen/cable4.webp" alt="">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Cable de red</h5>
-                <p class="card-text">Cable para red de internet.</p>
-                <p class="card-text"><small class="text-muted">Precio: 59.777,00  Bs.</small></p>
-              </div>
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
             </div>
           </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto17.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+          <div class="descrip-item pb-2">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto16.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+          <div class="descrip-item pb-2">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto20.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+          <div class="descrip-item pb-2">
+          </div>
+        </a>
+      </div>
     </div>
-  </article>
+  </div>
+  <script>
+    $('#productoCarousel3').owlCarousel({
+        loop:true,
+        dots:false,
+        mouseDrag: false,
+        margin:15,
+        responsive:{
+            0:{items:2},
+            600:{items:3},
+            1000:{items:5}
+        }
+    })
+  </script>
+  <!-- Otros Productos -->
+  <div class="container">
+    <h4 class="text-muted mb-2 lead">Todo los relacionado con <strong>Cables</strong>.</h4>
+    <div class="owl-carousel owl-theme px-2 py-3 my-2" id="productoCarousel4">
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto11.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto12.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto13.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+          <div class="descrip-item pb-2">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto14.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+          <div class="descrip-item pb-2">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto15.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+          <div class="descrip-item pb-2">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    $('#productoCarousel4').owlCarousel({
+        loop:true,
+        dots:false,
+        mouseDrag: false,
+        margin:15,
+        responsive:{
+            0:{items:2},
+            600:{items:3},
+            1000:{items:5}
+        }
+    })
+  </script>
   <!-- Instagrm -->
   <div class="container my-5">
     <div class="owl-carousel owl-theme px-2 my-5" id="car">
@@ -374,6 +439,17 @@ if(isset($_GET['reset'])){session_destroy();}
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15708.03522624633!2d-68.005718!3d10.179939!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d47af71967d9a49!2sSuministros+Mavic%2C+C.A!5e0!3m2!1ses!2sve!4v1562178603833!5m2!1ses!2sve" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
   <?php include_once 'common/footer.php';?>
+  <script>
+    //Script para texto de descreipcion de los productos
+    $(".item").hover(function(){
+      var titulo=$(this).find("img").attr("alt");
+      $(this).find(".descrip-item").append("<small class='text-muted px-3 pb-2 border-titulo-sombra' style='position:absolute;background-color:#fff'>"+titulo+"</small>").animate("color","slow","linear");
+      $(this).find("small").css("visibility","visible");
+    },function(){
+      $(this).find("small").css("visibility","hidden");
+      $(this).find(".descrip-item").empty();
+    });
+  </script>
   <script src="admin/assets/libs/popper.js/dist/umd/popper.min.js"></script>
   <script src="admin/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119925583-1"></script>

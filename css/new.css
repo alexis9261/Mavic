@@ -51,12 +51,15 @@
 /* Productos */
 .container-img-product{
   height: 46vh;
-  display: table-cell;
-  vertical-align: middle;
-  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .img-product{
   max-height: 45vh!important;
+  object-fit: contain;
+  object-position: center center;
 }
 .descrip-item{
   visibility:hidden;
