@@ -86,7 +86,7 @@ if(isset($_GET['reset'])){session_destroy();}
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/producto1.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto1.webp" alt="Impresora Multifuncional Epson L575 Red Usb Tinta Continua">
           </div>
           <div class="">
             <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
@@ -98,7 +98,7 @@ if(isset($_GET['reset'])){session_destroy();}
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/producto2.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto2.webp" alt="Impresora Multifuncional Samsung Laser Nueva + Otro Toner">
           </div>
           <div class="">
             <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
@@ -110,7 +110,7 @@ if(isset($_GET['reset'])){session_destroy();}
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/producto3.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto3.webp" alt="Impresora Multifuncional Canon Color Gris">
           </div>
           <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
           <div class="descrip-item pb-2">
@@ -120,7 +120,7 @@ if(isset($_GET['reset'])){session_destroy();}
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/producto4.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto4.webp" alt="Impresora Hp Laserjet M28w Multifuncional Monocromatica">
           </div>
           <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
           <div class="descrip-item pb-2">
@@ -130,7 +130,7 @@ if(isset($_GET['reset'])){session_destroy();}
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/producto5.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto5.webp" alt="Impresora Multifuncional Epson L575 Red Usb Tinta Continua">
           </div>
           <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
           <div class="descrip-item pb-2">
@@ -159,7 +159,7 @@ if(isset($_GET['reset'])){session_destroy();}
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/producto6.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto6.webp" alt="Router Inalambrico Wifi y Repetidor 300mbps Logan 3 Antenas">
           </div>
           <div class="">
             <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
@@ -171,7 +171,7 @@ if(isset($_GET['reset'])){session_destroy();}
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/producto7.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto7.webp" alt="Router Modem Inalambrico Tp-Link Td-w8961n 300mbps Red Wifi">
           </div>
           <div class="">
             <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
@@ -183,30 +183,36 @@ if(isset($_GET['reset'])){session_destroy();}
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/producto8.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto8.webp" alt="Router Inalambrico Tp-Link Tl-wr940n 450mbps Pc Lan Red Wifi">
           </div>
-          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
-          <div class="descrip-item pb-2">
-          </div>
-        </a>
-      </div>
-      <div class="item border-product mb-5">
-        <a href="#">
-          <div class="container-img-product">
-            <img class="img-product" src="imagen/producto9.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
-          </div>
-          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
-          <div class="descrip-item pb-2">
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
           </div>
         </a>
       </div>
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
-            <img class="img-product" src="imagen/producto10.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+            <img class="img-product" src="imagen/producto9.webp" alt="Router Wifi Tp Link Wr720n">
           </div>
-          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
-          <div class="descrip-item pb-2">
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto10.webp" alt="Router Inalambrico Tp-Link 300mbps Wds Tl-wr840n Acme">
+          </div>
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
           </div>
         </a>
       </div>
@@ -295,8 +301,10 @@ if(isset($_GET['reset'])){session_destroy();}
           <div class="container-img-product">
             <img class="img-product" src="imagen/producto17.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
-          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
-          <div class="descrip-item pb-2">
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
           </div>
         </a>
       </div>
@@ -305,8 +313,10 @@ if(isset($_GET['reset'])){session_destroy();}
           <div class="container-img-product">
             <img class="img-product" src="imagen/producto16.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
-          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
-          <div class="descrip-item pb-2">
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
           </div>
         </a>
       </div>
@@ -315,8 +325,10 @@ if(isset($_GET['reset'])){session_destroy();}
           <div class="container-img-product">
             <img class="img-product" src="imagen/producto20.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
-          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
-          <div class="descrip-item pb-2">
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
           </div>
         </a>
       </div>
@@ -368,8 +380,10 @@ if(isset($_GET['reset'])){session_destroy();}
           <div class="container-img-product">
             <img class="img-product" src="imagen/producto13.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
-          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
-          <div class="descrip-item pb-2">
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
           </div>
         </a>
       </div>
@@ -378,8 +392,10 @@ if(isset($_GET['reset'])){session_destroy();}
           <div class="container-img-product">
             <img class="img-product" src="imagen/producto14.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
-          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
-          <div class="descrip-item pb-2">
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
           </div>
         </a>
       </div>
@@ -388,8 +404,10 @@ if(isset($_GET['reset'])){session_destroy();}
           <div class="container-img-product">
             <img class="img-product" src="imagen/producto15.webp" alt="Franela de Dama Casual para mujeres que necesitan ropa">
           </div>
-          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
-          <div class="descrip-item pb-2">
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
           </div>
         </a>
       </div>
@@ -409,8 +427,8 @@ if(isset($_GET['reset'])){session_destroy();}
     })
   </script>
   <!-- Instagrm 2-->
-  <div class="container my-5">
-    <div class="owl-carousel owl-theme px-2 my-5" id="car">
+  <div class="container mb-5">
+    <div class="owl-carousel owl-theme px-2 my-2" id="car">
       <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
       <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad2.jpg" alt=""></a></div>
       <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad3.jpg" alt=""></a></div>
@@ -519,8 +537,8 @@ if(isset($_GET['reset'])){session_destroy();}
     //Script para texto de descreipcion de los productos
     $(".item").hover(function(){
       var titulo=$(this).find("img").attr("alt");
-      titulo=titulo.substr(0,53)+"...";
-      $(this).find(".descrip-item").append("<small class='text-muted px-3 pb-2 border-titulo-sombra' style='position:absolute;background-color:#fff'>"+titulo+"</small>").animate("color","slow","linear");
+      if(titulo.length>53){titulo=titulo.substr(0,53)+"...";}
+      $(this).find(".descrip-item").append("<small class='text-muted px-3 pb-2 border-titulo-sombra' style='position:absolute;background-color:#fff;min-width:100%;'>"+titulo+"</small>");
       $(this).find("small").css("visibility","visible");
     },function(){
       $(this).find("small").css("visibility","hidden");

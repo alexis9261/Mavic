@@ -76,7 +76,7 @@ $url=$_SERVER["REQUEST_URI"];
   </script>
   <title>Suministros Mavic</title>
 </head>
-<body>
+<body style="background-color:#efefef;">
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="../index.php">
@@ -88,98 +88,11 @@ $url=$_SERVER["REQUEST_URI"];
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <?php
-          switch($categ){
-            case '1':
-            ?>
-            <li class="nav-item active">
-              <a class="nav-link" href="?categ=1">Equipos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=2">Suministros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=3">Repuestos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=4">Consumibles</a>
-            </li>
-            <?php
-            break;
-            case '2':
-            ?>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=1">Equipos</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="?categ=2">Suministros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=3">Repuestos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=4">Consumibles</a>
-            </li>
-            <?php
-            break;
-            case '3':
-            ?>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=1">Equipos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=2">Suministros</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="?categ=3">Repuestos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=4">Consumibles</a>
-            </li>
-            <?php
-            break;
-            case '4':
-            ?>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=1">Equipos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=2">Suministros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=3">Repuestos</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="?categ=4">Consumibles</a>
-            </li>
-            <?php
-            break;
-            default:
-            ?>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=1">Equipos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=2">Suministros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=3">Repuestos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?categ=4">Consumibles</a>
-            </li>
-            <?php
-            break;
-          }
-          ?>
-          <li class="nav-item">
-            <a class="nav-link" href="../compras/index.php">Compras</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../faq/index.php">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../contacto/index.php">Contacto</a>
+          <li class="nav-item ml-4">
+            <input class="search-principal" type="search" name="busqueda" placeholder="Buscar...">
+            <button class="search-button" type="button" name="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15"><path fill="#a5a5a5"d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+            </button>
           </li>
         </ul>
         <ul class="nav justify-content-end pr-3">
@@ -190,7 +103,7 @@ $url=$_SERVER["REQUEST_URI"];
     </div>
   </nav>
   <?php include_once '../common/2domenu2.php';?>
-  <div class="container-fluid breadcrumb">
+  <div class="container-fluid mb-3" style="background-color:#fff;">
     <div class="container text-center py-2" style="font-family: 'Playfair Display', serif;">
       <div class="row d-block d-sm-none">
         <h2 class="display-5"><?php echo $publicidad2;?></h2>
