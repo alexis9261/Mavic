@@ -28,10 +28,10 @@ if(isset($_GET['reset'])){session_destroy();}
   <script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-8952175764108741",enable_page_level_ads: true});</script>
   <title>Suministros Mavic C.A.</title>
 </head>
-<body>
+<body style="background-color:#efefef;">
   <?php include 'common/menu.php'; include 'common/2domenu.php';?>
   <!--Corousel Library-->
-  <div class="owl-carousel owl-theme principalaux" id="carousel">
+  <div class="owl-carousel owl-theme" id="carousel">
     <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ppal1-responsive.jpg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/principal1.jpg" alt=""></div>
     <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ppal2-responsive.jpg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/principal3.jpg" alt=""></div>
     <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ppal3-responsive.jpg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/principal2.jpg" alt=""></div>
@@ -40,6 +40,7 @@ if(isset($_GET['reset'])){session_destroy();}
     $('#carousel').owlCarousel({
       loop:true,
       dots:true,
+      mouseDrag: false,
       //movimiento del carousel
       autoplay:true,
       autoplayTimeout:3000,
@@ -49,7 +50,7 @@ if(isset($_GET['reset'])){session_destroy();}
     })
   </script>
   <!-- Productos -->
-  <article class="container my-3 py-3">
+  <!--article class="container my-2 py-2">
     <h4 class="text-muted mb-4">Todo los relacionado con <strong>Routers</strong>.</h4>
     <div class="card-deck row justify-content-center">
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
@@ -112,10 +113,94 @@ if(isset($_GET['reset'])){session_destroy();}
         /*}
       } */?>
     </div>
-  </article>
+  </article-->
+  <!-- Otros Productos -->
+  <div class="container mt-3">
+    <h4 class="text-muted mb-2">Todo los relacionado con <strong>Impresoras</strong>.</h4>
+    <div class="owl-carousel owl-theme px-2 py-3 my-2" id="productoCarousel">
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product"><!-- aqui se centra la imagen -->
+            <img class="img-product" src="imagen/producto1.jpg" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto2.jpg" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <div class="">
+            <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+            <div class="descrip-item pb-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto3.jpg" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+          <div class="descrip-item pb-2">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/publicidad1.jpg" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+          <div class="descrip-item pb-2">
+          </div>
+        </a>
+      </div>
+      <div class="item border-product mb-5">
+        <a href="#">
+          <div class="container-img-product">
+            <img class="img-product" src="imagen/producto5.jpg" alt="Franela de Dama Casual para mujeres que necesitan ropa">
+          </div>
+          <h5 class="pl-3 mb-0 pt-2">40.500,00 Bs.</h5>
+          <div class="descrip-item pb-2">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(".item").hover(function(){
+      var titulo=$(this).find("img").attr("alt");
+      $(this).find(".descrip-item").append("<small class='text-muted px-3 pb-2 border-titulo-sombra' style='position:absolute;background-color:#fff'>"+titulo+"</small>").animate("color","slow","linear");
+      $(this).find("small").css("visibility","visible");
+    },function(){
+      $(this).find("small").css("visibility","hidden");
+      $(this).find(".descrip-item").empty();
+    });
+  </script>
+  <script>
+    $('#productoCarousel').owlCarousel({
+        loop:true,
+        dots:false,
+        mouseDrag: false,
+        margin:15,
+        responsive:{//pixeles de la pantalla
+            0:{items:2},
+            600:{items:3},
+            1000:{items:5}
+        }
+    })
+  </script>
   <!-- Instagrm -->
-  <div class="container my-5">
-    <div class="owl-carousel owl-theme px-2 my-5">
+  <div class="container mt-1 mb-3">
+    <h4 class="text-muted mb-2">Nuestras promociones de <strong>Instagram</strong>.</h4>
+    <div class="owl-carousel owl-theme px-2 my-4">
       <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
       <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad2.jpg" alt=""></a></div>
       <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad3.jpg" alt=""></a></div>
