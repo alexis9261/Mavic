@@ -350,7 +350,7 @@ if(isset($_GET['reset'])){session_destroy();}
   <!-- Otros Productos 4 -->
   <div class="container">
     <h4 class="text-muted mb-2 lead">Todo los relacionado con <strong>Cables</strong>.</h4>
-    <div class="owl-carousel owl-theme px-2 py-3 my-2" id="productoCarousel4">
+    <div class="owl-carousel owl-theme px-2 py-1 my-2" id="productoCarousel4">
       <div class="item border-product mb-5">
         <a href="#">
           <div class="container-img-product">
@@ -426,40 +426,9 @@ if(isset($_GET['reset'])){session_destroy();}
         }
     })
   </script>
-  <!-- Instagrm 2-->
-  <div class="container mb-5">
-    <div class="owl-carousel owl-theme px-2 my-2" id="car">
-      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
-      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad2.jpg" alt=""></a></div>
-      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad3.jpg" alt=""></a></div>
-      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad4.jpg" alt=""></a></div>
-      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad5.jpg" alt=""></a></div>
-      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad6.jpg" alt=""></a></div>
-      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad7.jpg" alt=""></a></div>
-      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad8.jpg" alt=""></a></div>
-      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad9.jpg" alt=""></a></div>
-    </div>
-  </div>
-  <script>
-    $('#car').owlCarousel({
-        loop:true,
-        //movimiento del carousel
-        autoplay:false,
-        margin:40,
-        responsive:{//pixeles de la pantalla
-            0:{items:1},
-            600:{items:2},
-            1000:{items:3}
-        }
-    })
-  </script>
-  <!-- Maps -->
-  <div class="m-0">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15708.03522624633!2d-68.005718!3d10.179939!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d47af71967d9a49!2sSuministros+Mavic%2C+C.A!5e0!3m2!1ses!2sve!4v1562178603833!5m2!1ses!2sve" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
   <!-- Otros Productos 4 -->
   <div class="container">
-    <h4 class="text-muted mb-2 mt-3 lead">Tambien te puede interesar.</h4>
+    <h4 class="text-muted mb-2 mt-1 lead">Tambien te puede interesar.</h4>
     <div class="owl-carousel owl-theme px-2 py-3 my-2" id="productoCarousel5">
       <div class="item border-product mb-1">
         <a href="#">
@@ -519,6 +488,37 @@ if(isset($_GET['reset'])){session_destroy();}
       </div>
     </div>
   </div>
+  <!-- Instagrm 2-->
+  <div class="container mb-5">
+    <div class="owl-carousel owl-theme px-2 my-2" id="car">
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad1.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad2.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad3.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad4.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad5.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad6.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad7.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad8.jpg" alt=""></a></div>
+      <div class="item"><a href="#"><img class="img-fluid imagenInsta" src="imagen/publicidad9.jpg" alt=""></a></div>
+    </div>
+  </div>
+  <script>
+    $('#car').owlCarousel({
+        loop:true,
+        //movimiento del carousel
+        autoplay:false,
+        margin:40,
+        responsive:{//pixeles de la pantalla
+            0:{items:1},
+            600:{items:2},
+            1000:{items:3}
+        }
+    })
+  </script>
+  <!-- Maps -->
+  <div class="m-0">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15708.03522624633!2d-68.005718!3d10.179939!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d47af71967d9a49!2sSuministros+Mavic%2C+C.A!5e0!3m2!1ses!2sve!4v1562178603833!5m2!1ses!2sve" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
   <script>
     $('#productoCarousel5').owlCarousel({
         loop:true,
@@ -537,7 +537,7 @@ if(isset($_GET['reset'])){session_destroy();}
     //Script para texto de descreipcion de los productos
     $(".item").hover(function(){
       var titulo=$(this).find("img").attr("alt");
-      if(titulo.length>53){titulo=titulo.substr(0,53)+"...";}
+      if(titulo.length>50){titulo=titulo.substr(0,50)+"...";}
       $(this).find(".descrip-item").append("<small class='text-muted px-3 pb-2 border-titulo-sombra' style='position:absolute;background-color:#fff;min-width:100%;'>"+titulo+"</small>");
       $(this).find("small").css("visibility","visible");
     },function(){
