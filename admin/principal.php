@@ -7,7 +7,6 @@
   if($row=$result_nivel->fetch_assoc()){
     $_SESSION['nivel']=$row['NIVEL'];
   }
-
 //infomacion mostradas
 //Compras Completadas
 $sql="SELECT COUNT(*) AS CUENTA FROM PEDIDOS WHERE ESTATUS=9";
@@ -142,20 +141,20 @@ while($row = $result->fetch_assoc()) {
 <![endif]-->
 </head>
 <body>
-    <div class="preloader">
-        <div class="lds-ripple">
-            <div class="lds-pos"></div>
-            <div class="lds-pos"></div>
-        </div>
+  <div class="preloader">
+    <div class="lds-ripple">
+      <div class="lds-pos"></div>
+      <div class="lds-pos"></div>
     </div>
+  </div>
     <div id="main-wrapper" data-navbarbg="skin6" data-theme="light" data-layout="vertical" data-sidebartype="full" data-boxed-layout="full">
-            <?php include('common/navbar.php'); ?>
+        <?php include('common/navbar.php'); ?>
         <div class="page-wrapper">
             <div class="page-breadcrumb">
                 <div class="row">
-                    <div class="col-5 align-self-center">
-                        <h4 class="page-title">Principal <a href="../admin/principal.php" class="m-2" ><i title="Actualizar" data-toggle="tooltip" class="ti-loop"></i></a></h4>
-                    </div>
+                  <div class="col-5 align-self-center">
+                    <h4 class="page-title">Principal <a href="../admin/principal.php" class="m-2" ><i title="Actualizar" data-toggle="tooltip" class="ti-loop"></i></a></h4>
+                  </div>
                     <div class="col-7 align-self-center">
                         <div class="d-flex align-items-center justify-content-end">
                             <nav aria-label="breadcrumb">
@@ -172,13 +171,13 @@ while($row = $result->fetch_assoc()) {
             </div>
             <div class="container-fluid">
                 <div class="row justify-content-center">
-                    <div class="col-lg-11">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Página Administrativa de la Empresa Rouxa, C.A.</h4>
-                            </div>
-                        </div>
+                  <div class="col-lg-11">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">Página Administrativa de la Empresa Rouxa, C.A.</h4>
+                      </div>
                     </div>
+                  </div>
                     <div class="col-lg-11  bg-white mb-1">
                       <div class="card">
                         <div class="card-body">

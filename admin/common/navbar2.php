@@ -65,9 +65,9 @@ if($row=$result->fetch_assoc()){
                 <?php }
                 if($row["NIVEL"]==6 || $row["NIVEL"]==1){ ?>
                 <li class="sidebar-item">
-                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../desarrollo/" aria-expanded="false">
+                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../generales/" aria-expanded="false">
                         <i class="mdi mdi-account-network"></i>
-                        <span class="hide-menu">Desarrollo </span>
+                        <span class="hide-menu">Configuración General  </span>
                     </a>
                 </li>
                 <?php }

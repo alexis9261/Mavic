@@ -79,6 +79,7 @@ if(isset($_GET['reset'])){session_destroy();}
       } */?>
     </div>
   </article-->
+  
   <!-- Otros Productos -->
   <div class="container mt-3">
     <h4 class="text-muted mb-2 lead">Todo los relacionado con <strong>Impresoras</strong>.</h4>

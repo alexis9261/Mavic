@@ -36,7 +36,7 @@ require('../../common/conexion.php');
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-5 align-self-center">
-                        <h4 class="page-title">Desarrollo</h4>
+                      <h4 class="page-title">Configuración General</h4>
                     </div>
                     <div class="col-7 align-self-center">
                         <div class="d-flex align-items-center justify-content-end">
