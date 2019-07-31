@@ -32,9 +32,9 @@ if(isset($_GET['reset'])){session_destroy();}
   <?php include 'common/menu.php'; include 'common/2domenu.php';?>
   <!--Corousel Library-->
   <div class="owl-carousel owl-theme" id="carousel">
-    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ppal1-responsive.jpg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/principal1.jpg" alt=""></div>
-    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ppal2-responsive.jpg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/principal3.jpg" alt=""></div>
-    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ppal3-responsive.jpg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/principal2.jpg" alt=""></div>
+    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ppal1-responsive.jpg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/principal1.jpeg" alt=""></div>
+    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ppal2-responsive.jpg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/principal3.jpeg" alt=""></div>
+    <div class="imagenPpal"><img class="d-block d-sm-none" src="imagen/ppal3-responsive.jpg" alt=""><img class="img-fluid d-none d-sm-block" src="imagen/principal2.jpeg" alt=""></div>
   </div>
   <script>
     $('#carousel').owlCarousel({
@@ -79,7 +79,7 @@ if(isset($_GET['reset'])){session_destroy();}
       } */?>
     </div>
   </article-->
-  
+
   <!-- Otros Productos -->
   <div class="container mt-3">
     <h4 class="text-muted mb-2 lead">Todo los relacionado con <strong>Impresoras</strong>.</h4>
